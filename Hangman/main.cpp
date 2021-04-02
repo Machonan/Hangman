@@ -6,6 +6,7 @@
 #include <stdlib.h> // to select random word
 #include "dialogue.h" // to centralise all in-game dialogue in one location
 
+
 void Log(const std::string message); // simple function for displaying dialogue
 void drawStickman(int wrongGuesses); // function for drawing the stickman etc. 
 void drawingSetup(int wrongGuesses);
@@ -28,12 +29,13 @@ int main()
 	 4) End game loop
 	 */
 
-	char playGame;
+	char playGame = 0;
 	
 	
 	// Welcome the player, ask if they want to play game, and receive player choice input
 	Log(welcomeText); 
 	std::cin >> playGame; 
+
 
 	// If player says yes, then proceed with game
 	while (playGame == 'Y' || playGame == 'y')
@@ -83,8 +85,9 @@ int main()
 			}
 
 		}
-		break;
+		
 	}
+	std::cin.get();
 }
 
 
@@ -100,7 +103,7 @@ void wordCheck(std::string secretWord, char playerGuess, std::string& hiddenWord
 	if (secretWord.find(playerGuess) != std::string::npos)
 	{
 		Log(correctGuessText);
-		for (int i = 0; i < secretWord.length(); ++i)
+		for (unsigned int i = 0; i < secretWord.length(); ++i)
 		{
 			if (secretWord[i] == playerGuess)
 			{
