@@ -19,8 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dialogue.h" />
     <ClCompile Include="log.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="drawing.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="log.h" />
