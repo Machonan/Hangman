@@ -1,4 +1,5 @@
 ﻿  dialogue.h
+  log.cpp
   main.cpp
 D:\Dev\CppSeries\Hangman\Hangman\main.cpp(41,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
 D:\Dev\CppSeries\Hangman\Hangman\main.cpp(103,21): warning C4018: '<': signed/unsigned mismatch
