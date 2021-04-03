@@ -19,16 +19,22 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="dialogue.cpp" />
     <ClCompile Include="dialogue.h" />
+    <ClCompile Include="gameFunctions.cpp" />
     <ClCompile Include="log.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="drawing.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="log.h" />
+    <ClCompile Include="words.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="words.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="drawing.h" />
+    <ClInclude Include="gameFunctions.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="words.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

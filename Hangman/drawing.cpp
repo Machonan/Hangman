@@ -66,9 +66,3 @@ void drawStickman(int wrongGuesses)
 		break;
 	}
 }
-
-void drawingSetup(int wrongGuesses)
-{
-	drawStickman(wrongGuesses);
-	Log(questionText);
-}
