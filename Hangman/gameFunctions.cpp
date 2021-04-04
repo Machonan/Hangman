@@ -1,6 +1,8 @@
 #include <iostream> // for general input / output
 #include "log.h"
 #include "dialogue.h"
+#include "gameFunctions.h" // functions to ask the player to guess and check the letter the player submitted
+
 
 void guessing(std::string hiddenWord, char& playerGuess)
 {

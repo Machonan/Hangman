@@ -2,6 +2,7 @@
 #include <string>
 #include "dialogue.h" // to centralise all in-game dialogue in one location
 
+
 void Log(const std::string message);
 
 void drawStickman(int wrongGuesses)

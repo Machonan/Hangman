@@ -5,10 +5,13 @@
 #include <string> // standard string usage
 #include <stdlib.h> // to select random word
 #include "dialogue.h" // to centralise all in-game dialogue in one location
-#include "log.h"
-#include "drawing.h"
-#include "words.h"
-#include "gameFunctions.h"
+#include "log.h" // function for logging text to the console
+#include "drawing.h" // function for drawing the stickman and gallows to 
+#include "words.h" // string array of words to be used in the game
+#include "gameFunctions.h" // functions to ask the player to guess and check the letter the player submitted
+
+
+
 
 int main()
 {
@@ -26,10 +29,8 @@ int main()
 	 4) If player doesn't want to play again, end game
 	 */
 
-	char playGame;
-	
-	
 	// Welcome the player, ask if they want to play game, and receive player choice input
+	char playGame;
 	Log(welcomeText); 
 	std::cin >> playGame; 
 
@@ -41,8 +42,8 @@ int main()
 		std::string secretWord;
 		int wrongGuesses = 0;
 		int totalLines = 0;
-		char playerGuess;
 		bool gameOver = false;
+		char playerGuess = 0;
 
 
 		int random_number = rand() % (wordCount - 1); 

@@ -1,3 +1,11 @@
-﻿  main.cpp
-D:\Dev\CppSeries\Hangman\Hangman\main.cpp(40,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  dialogue.cpp
+  dialogue.h
+  gameFunctions.cpp
+  log.cpp
+  main.cpp
+D:\Dev\CppSeries\Hangman\Hangman\main.cpp(41,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  drawing.cpp
+  words.cpp
+  Generating Code...
+D:\Dev\CppSeries\Hangman\\bin\intermediates\Win32\Debug\dialogue.obj : warning LNK4042: object specified more than once; extras ignored
   Hangman.vcxproj -> D:\Dev\CppSeries\Hangman\bin\Win32\Debug\Hangman.exe
